@@ -12,8 +12,8 @@ export default function Donate() {
       <div className="page-header" style={{ backgroundImage: "url('/Images/supportus.jpg')" }}>
         <div className="page-header-overlay glass-dark">
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <h1 className="hero-title animate-fade-in-up">Donate Now</h1>
-            <p className="hero-subtitle animate-fade-in-up delay-100">Your contribution brings hope and changes lives.</p>
+            <h1 className="hero-title animate-fade-in-up" style={{ color: 'white' }}>Donate Now</h1>
+            <p className="hero-subtitle animate-fade-in-up delay-100" style={{ color: 'white' }}>Your contribution brings hope and changes lives.</p>
           </div>
         </div>
       </div>
