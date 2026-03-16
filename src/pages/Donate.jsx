@@ -24,13 +24,13 @@ export default function Donate() {
             <h2 className="section-title" style={{ fontSize: '2rem' }}>Make a Donation</h2>
             <p className="section-subtitle" style={{ marginBottom: '40px' }}>Select an amount or enter your custom donation.</p>
             
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px', marginBottom: '24px' }}>
+            <div className="donation-grid">
               {['₦5,000', '₦10,000', '₦25,000', '₦50,000', '₦100,000', '₦250,000'].map((val) => (
                 <button 
                   key={val} 
                   className={`btn-outline ${amount === val ? 'btn-primary' : ''}`}
                   onClick={() => handleAmountClick(val)}
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', marginBottom: 0 }}
                 >
                   {val}
                 </button>

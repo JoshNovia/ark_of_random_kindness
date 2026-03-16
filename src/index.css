@@ -204,3 +204,61 @@ button {
   to { opacity: 1; }
 }
 
+/* Global Responsive Styles */
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+  .page-header {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 40px 0;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .page-header {
+    height: 250px;
+  }
+  .donation-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .btn-primary, .btn-outline {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
